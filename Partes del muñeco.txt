@@ -1,0 +1,22 @@
+0.
+aquí se colocarán las partes que completarán el muñeco.
+1.
+se coloca la cabeza del muñeco.
+2.
+se colocan los ojos en la cara del muñeco.
+3.
+se coloca la boca en la cara del muñeco.
+4.
+se coloca el tronco del muñeco
+5.
+se coloca el primer brazo del muñeco.
+6. 
+se coloca el segundo brazo del muñeco.
+7.
+se coloca la primera pierna del muñeco.
+8.
+se coloca la segunda pierna del muñeco.
+9.
+se muestra el muñeco completo.
+
+

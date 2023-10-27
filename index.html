@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <!doctype html>
+    <html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <title>Ahorcado</title>
+    </head>
+
+<body>
+    <audio id="musicaJuego" src="sonidos/musicaJuego.mp3"></audio>
+    <audio id="letraCorrecta" src="sonidos/audioDeLetraCorrecta-001.mp3"></audio>
+    <audio id="letraEquivocada" src="sonidos/audioDeLetraEquivocada-001.mp3"></audio>
+    <audio id="ganaJuego" src="sonidos/audioDianaMusical1.1-001.mp3"></audio>
+    <audio id="pierdeJuego" src="sonidos/marcha_funebre.mp3"></audio>
+    <div class="container text-center">
+        <header class="text-center">
+            <h1>Ahorcado</h1>
+            <p class="lead">Adivina la palabra. Recuerda que si la palabra contiene tilde deberás incluirla</p>
+            <button id="btnEmpezar" class="btn btn-primary">Empezar</button>
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <figure class="col-3">
+                        <img id="imgAhorcado" class="w-100" src="img/0.jpg" alt="Ahorcado">
+                        <figcaption role="alert"></figcaption>
+                    </figure>
+                    <div id="divPrincipal" class="col-9 text-center">
+                        <div id="divSpan" class="text-center">
+                            <p id="parrafoCantLetras" class="lead"></p>
+                        </div>
+
+                        <form id="formPrincipal" name="formPrincipal">
+                            <div id="divInput" class="mb-3">
+                                <input disabled required maxlength="1" type="text" class="form-control" id="inputJugador"
+                                    aria-describedby="textHelp">
+                                <div id="textHelp" class="form-text">Ingresa una letra y presiona el botón "Jugar".
+                                </div>
+                            </div>
+                            <button disabled id="btnJugar" type="submit" class="btn btn-primary">Jugar</button>
+                            <p role="alert" id="parrafoInput" class="lead"></p>
+                        </form>
+                        <p role="alert" id="parrafoErrores" class="lead text-danger"></p>
+                        <ul id="listaErrores" class="text-danger lead"></ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="text-center">
+            <p class="text-muted">Copyright &copy;2023.</p>
+        </footer>
+    </div>
+    <script src="ahorcado.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
